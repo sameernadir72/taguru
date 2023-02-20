@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "reactstrap": "^9.0.1"
   }
 }
