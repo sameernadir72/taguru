@@ -61,9 +61,9 @@ function Body() {
 
   return (
     <div className={styles.container}>
-      <p className={styles.heading}>Resume Builder</p>
+     
       <div className={styles.toolbar}>
-        <div className={styles.colors}>
+        <div className={styles.colors} style={{alignitem:"center"}}>
           {colors.map((item) => (
             <span
               key={item}
@@ -75,16 +75,7 @@ function Body() {
             />
           ))}
         </div>
-        <ReactToPrint
-          trigger={() => {
-            return (
-              <button>
-                Connect Wallet <ArrowDown />
-              </button>
-            );
-          }}
-          content={() => resumeRef.current}
-        />
+        
       </div>
       
     </div>

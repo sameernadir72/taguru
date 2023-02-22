@@ -45,25 +45,28 @@ function BasicExample() {
       {/* <IntegrationWallets /> */}
 
       <Navbar bg="light" expand="lg" >
-        <Container>
-          <Navbar.Brand>PearlTMDE</Navbar.Brand>
+        <Container className='justify-content-center py-2'>
+          <Navbar.Brand >TAGURU</Navbar.Brand>
+          <nav >
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto px-2">
               
-              <Nav.Link as={Link} to={"/body"}>Inputs</Nav.Link>
-              <Nav.Link as={Link} to={"/resume"}>Display</Nav.Link>
-              <Nav.Link as={Link} to={"/editor"}>Forms</Nav.Link>
+              <Nav.Link as={Link} to={"/"}>Create</Nav.Link>
+              <Nav.Link as={Link} to={"/resume"}>Dispaly</Nav.Link>
+              <Nav.Link as={Link} to={"/editor"}>Update</Nav.Link>
 
-              {/* {active ?
-                <button className="btn btn-primary px-4 rounded-pill"onClick={() => deactivate()}>{`${account?.slice(0, 4)}...${account?.slice(-4)}`}</button> :
-                <button className='btn ' onClick={conToMetaMask}>Connect metamask</button>
+             
+                <button className="btn btn-primary px-4 rounded-pill">Connect Wallet</button> :
+                
 
-              } */}
+              
 
 
             </Nav>
           </Navbar.Collapse>
+          </nav>
         </Container>
       </Navbar>
     </>

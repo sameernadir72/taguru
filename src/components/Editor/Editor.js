@@ -621,7 +621,7 @@ function Editor(props) {
 
         {generateBody()}
 
-        <button onClick={handleSubmission}>Save</button>
+        <button onClick={handleSubmission}>Submit</button>
       </div>
     </div>
   );

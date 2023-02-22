@@ -5,11 +5,13 @@ import Resume from "./components/Resume/Resume";
 import Editor from "./components/Editor/Editor";
 import Navbar from "./components/Header/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import "./App.css";
 
-
+ import "./App.css";
+// 
 function App() {
+  
   const sections = {
     basicInfo: "Heading",
     workExp: "Job",
@@ -20,6 +22,7 @@ function App() {
     other: "Other",
   };
   const resumeRef = useRef();
+  
   const [resumeInformation, setResumeInformation] = useState({
     [sections.basicInfo]: {
       id: sections.basicInfo,
@@ -59,11 +62,12 @@ function App() {
   });
   return (
     <div className="App">
+       
       <Router >
         <Navbar />
         <Switch>
-          <Route path="/body" exact>
-            <Body/>
+          <Route path="/" exact>
+            {/* <Body/> */}
             <Editor
           sections={sections}
           information={resumeInformation}
@@ -75,6 +79,7 @@ function App() {
           information={resumeInformation}
         
         />
+        
           </Route>
           <Route path="/editor" exact >
             <Editor
