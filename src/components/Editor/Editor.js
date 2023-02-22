@@ -6,6 +6,8 @@ import InputControl from "../InputControl/InputControl";
 import styles from "./Editor.module.css";
 
 function Editor(props) {
+
+
   const sections = props.sections;
   const information = props.information;
 
@@ -264,21 +266,8 @@ function Editor(props) {
           value={values.points ? values.points[0] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 0)}
         />
-        <InputControl
-          placeholder="Enter Your Hobbies"
-          value={values.points ? values.points[1] : ""}
-          onChange={(event) => handlePointUpdate(event.target.value, 1)}
-        />
-        <InputControl
-          placeholder="Enter Your Hobbies"
-          value={values.points ? values.points[2] : ""}
-          onChange={(event) => handlePointUpdate(event.target.value, 2)}
-        />
-        <InputControl
-          placeholder="Enter Your Hobbies"
-          value={values.points ? values.points[3] : ""}
-          onChange={(event) => handlePointUpdate(event.target.value, 3)}
-        />
+       
+        
       </div>
     </div>
   );
@@ -301,9 +290,12 @@ function Editor(props) {
         value={values.other}
         placeholder="Enter something"
         onChange={(event) =>
-          setValues((prev) => ({ ...prev, other: event.target.value }))
+          setValues((prev) => ({ ...prev, other: event.target.value}))
         }
       />
+
+    
+      
     </div>
   );
 
@@ -585,6 +577,7 @@ function Editor(props) {
           placeholder="Enter section title"
           value={sectionTitle}
           onChange={(event) => setSectionTitle(event.target.value)}
+          disabled
         />
 
         <div className={styles.chips}>
@@ -620,9 +613,17 @@ function Editor(props) {
         </div>
 
         {generateBody()}
+    
+       
 
-        <button onClick={handleSubmission}>Submit</button>
+<div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
+<button onClick={handleSubmission}>Save</button>
+        
+        <button >Submit</button>
+        </div>
+
       </div>
+     
     </div>
   );
 }

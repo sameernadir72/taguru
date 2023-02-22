@@ -73,6 +73,7 @@ function App() {
           information={resumeInformation}
           setInformation={setResumeInformation}
         />
+        
         <Resume
           ref={resumeRef}
           sections={sections}
@@ -90,6 +91,7 @@ function App() {
           </Route>
          
           <Route path="/resume" exact >
+          
           <Resume
           ref={resumeRef}
           sections={sections}

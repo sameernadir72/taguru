@@ -5,11 +5,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
+import './navbar.modulus.css'
 // import { Injected } from '../features/Connectors';
 // import { useContextAPI } from '../features/contextapi';
 
-function BasicExample() {
 
+function BasicExample() {
   // const { active, activate , library , account, deactivate , chainID } = useWeb3React();
   // const {setMessage} = useContextAPI()
   
@@ -43,32 +44,27 @@ function BasicExample() {
   return (
     <>
       {/* <IntegrationWallets /> */}
-
-      <Navbar bg="light" expand="lg" >
+ 
+      <Navbar bg="light" expand="lg" className='navbarcontainer'>
         <Container className='justify-content-center py-2'>
           <Navbar.Brand >TAGURU</Navbar.Brand>
-          <nav >
+          <nav>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto px-2">
-              
+      
+            <Nav >
               <Nav.Link as={Link} to={"/"}>Create</Nav.Link>
               <Nav.Link as={Link} to={"/resume"}>Dispaly</Nav.Link>
               <Nav.Link as={Link} to={"/editor"}>Update</Nav.Link>
-
-             
-                <button className="btn btn-primary px-4 rounded-pill">Connect Wallet</button> :
-                
-
-              
-
-
             </Nav>
+
+     
           </Navbar.Collapse>
           </nav>
         </Container>
-      </Navbar>
+                <button className="btn btn-primary px-4 rounded-pill  px-2 connectbutton">Connect Wallet</button> 
+      </Navbar> 
     </>
 
 

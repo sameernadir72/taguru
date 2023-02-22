@@ -73,6 +73,7 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
+ 
 }
 
 .chips .new {
@@ -87,6 +88,7 @@
   gap: 5px;
   align-items: center;
   padding: 4px 8px;
+  
   background-color: #808080;
   border-radius: 20px;
   cursor: default;
@@ -96,6 +98,7 @@
   font-weight: 500;
   line-height: 1.25rem;
   color: #fff;
+  margin: auto;
 }
 .chip svg {
   color: #fff;
@@ -128,4 +131,20 @@
 
 .body button:active {
   transform: translateY(2px);
+}
+
+@media only screen and (max-width: 425px){
+  .container {
+    min-width: 550px;
+    min-height: 450px;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    padding-top: 5px;
+    height: fit-content;
+    margin: 2rem 5rem auto;
+  }
+  
 }
