@@ -1,6 +1,6 @@
-import { InjectedConnector } from "@web3-react/injected-connector";
+import { InjectedConnector } from '@web3-react/injected-connector';
 
 // MetaMask
 export const Injected = new InjectedConnector({
-    supportedChainIds: [ 1, 11155111 ]
+    supportedChainIds: [1, 11155111]
 });

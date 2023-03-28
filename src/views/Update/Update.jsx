@@ -10,7 +10,7 @@ import { contractadd, contractabi } from './../ConnectWallet/contractinfo';
 import { useWeb3React } from '@web3-react/core';
 import { ethers } from 'ethers';
 import LiveDisplay from '../LiveDisplay/LiveDisplay';
-
+import Navbar from '../Header/Navbar';
 function timeConverter(UNIX_timestamp) {
     var a = new Date(UNIX_timestamp * 1000);
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -267,6 +267,7 @@ const Update = () => {
     // forms
     const basicInfoBody = (
         <div className={styles.detail}>
+            <Navbar />
             <div className={styles.row}>
                 <InputControl
                     label="Name"
