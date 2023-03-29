@@ -2,7 +2,7 @@ import { useWeb3React } from '@web3-react/core';
 
 import { Link } from 'react-router-dom';
 import { Injected } from '../ConnectWallet/Wallets';
-
+import { Button } from '@mui/material';
 // import { Injected } from '../features/Connectors';
 // import { useContextAPI } from '../features/contextapi';
 
@@ -37,13 +37,13 @@ function BasicExample() {
             {/* <IntegrationWallets /> */}
 
             {active ? (
-                <button className="btn btn-primary px-4 rounded-pill  px-2 connectbutton" onClick={disWallet}>
+                <Button className="btn btn-primary px-4 rounded-pill  px-2 connectbutton" onClick={disWallet} variant="contained">
                     {account?.slice(0, 4)}...{account?.slice(-4)}
-                </button>
+                </Button>
             ) : (
-                <button className="btn btn-primary px-4 rounded-pill  px-2 connectbutton" onClick={conToMetaMask}>
+                <Button className="btn btn-primary px-4 rounded-pill  px-2 connectbutton" onClick={conToMetaMask} variant="contained">
                     Connect Wallet
-                </button>
+                </Button>
             )}
         </>
     );

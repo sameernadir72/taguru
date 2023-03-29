@@ -206,7 +206,6 @@ const Create = () => {
             </div>
 
             <div className={styles.column}>
-                // eslint-disable-next-line jsx-a11y/label-has-associated-control
                 <label>Achievements and Responsibilities</label>
                 <InputControl
                     placeholder="Describe your achievements and responsibilities"
@@ -284,7 +283,6 @@ const Create = () => {
     const achievementsBody = (
         <div className={styles.detail}>
             <div className={styles.column}>
-                // eslint-disable-next-line jsx-a11y/label-has-associated-control
                 <label> Your Hobbies</label>
                 <InputControl
                     placeholder="Enter Your Hobbies"
