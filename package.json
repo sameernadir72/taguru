@@ -1,8 +1,8 @@
 {
-    "name": "berry-material-react-free",
+    "name": "ta-guru",
     "version": "3.3.1",
     "private": true,
-    "homepage": "https://berrydashboard.io/free",
+    "homepage": "http://Muhammad-Masood.github.io/ta-guru",
     "dependencies": {
         "@emotion/cache": "^11.9.3",
         "@emotion/react": "^11.9.3",
@@ -39,6 +39,8 @@
     },
     "scripts": {
         "start": "react-scripts start",
+        "predeploy":"npm run deploy",
+        "deploy":"gh-pages -d build",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
@@ -81,6 +83,7 @@
         "eslint-plugin-prettier": "^4.2.1",
         "eslint-plugin-react": "^7.30.1",
         "eslint-plugin-react-hooks": "^4.6.0",
+        "gh-pages": "^5.0.0",
         "prettier": "^2.7.1",
         "sass": "^1.53.0"
     }
