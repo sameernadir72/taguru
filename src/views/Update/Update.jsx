@@ -1,6 +1,4 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/label-has-associated-control */
+
 import React, { useEffect, useRef, useState } from 'react';
 import InputControl from '../InputControl/InputControl';
 import styles from './Update.module.css';

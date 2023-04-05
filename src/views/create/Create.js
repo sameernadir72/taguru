@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useRef, useState, createRef } from "react";
 import InputControl from "../InputControl/InputControl";
 import styles from "./Create.module.css";
@@ -473,7 +472,6 @@ const Create = () => {
             <div className={`border rounded ${styles.container}`}>
               <div className={styles.header}>
                 {Object.keys(sections)?.map((key, index) => (
-                  // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
                   <div
                     className={`${styles.section} ${activeSectionKey === key ? styles.active : ""}`}
                     key={key}
